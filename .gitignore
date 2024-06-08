@@ -1,0 +1,22 @@
+# Node.js files
+node_modules/
+
+# Production related files
+.env
+
+# Dependency lock files
+package-lock.json
+
+# Editor temporary files
+.idea/
+.vscode/
+
+# Testing files (if applicable)
+__tests__ 
+test.js
+
+# Compiled files (EJS compiled files are usually not needed in version control)
+# public/
+
+# Ignore any specific files you don't want tracked (e.g., screenshots)
+screenshots/
