@@ -8,7 +8,6 @@ const userSchema = new mongoose.Schema({
 		type: Array,
 		default: [],
 	},
-	isAdmit: Boolean,
 	orders: {
 		type: Array,
 		default: [],

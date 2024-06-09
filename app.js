@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const cookieParser = require("cookie-parser");
 const path = require("path");
+const debug = require("debug")("development:mongoose");
 
 const db = require("./config/mongoose-connection");
 const ownersRouter = require("./routes/ownersRouter");
@@ -18,6 +19,6 @@ app.use("/owners", ownersRouter);
 app.use("/users", usersRouter);
 app.use("/products", productsRouter);
 
-app.listen(3000, () => {
-	console.log("Server is running on port 3000");
+app.listen(process.env.PORT, () => {
+	debug("Server is running on port 3000");
 });
