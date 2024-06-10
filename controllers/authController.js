@@ -53,3 +53,8 @@ module.exports.loginUser = async (req, res) => {
 		res.send(err.message);
 	}
 };
+
+module.exports.logoutUser = async (req, res) => {
+	res.cookie("token", "");
+	res.redirect("/");
+};
